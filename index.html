@@ -9,8 +9,12 @@
 		<title>Massively by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
 	</head>
 	<body class="is-preload">
 
@@ -54,38 +58,49 @@
 									<h2>My name is Greg Button</h2>
 									<p>I'm a passionate developer but more importantly, I'm passionate about technology.
 								</header>
-								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
+								<a class="image main"><img src="images/pic01.jpg" alt="" /></a>
 								<ul class="actions special">
-									<li><a href="#" class="button large">CHECK IT OUT!</a></li>
+									<li><a class="button large">CHECK IT OUT!</a></li>
 								</ul>
 							</article>
+
 
 						<!-- Posts -->
 							<section class="posts">
 								<article>
 									<header>
 										<span class="date">Project 1</span>
-										<h2><a href="#">Perfectly Portioned Plate</h2>
+										<h2>Perfect Plate</h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>This project displays one of my projects I created in swift.</p>
+									<a class="image fit"><img src="images/Perfect Plate.png" style="cursor:zoom-in" 
+										onclick="document.getElementById('modal01').style.display='block'" alt="" /></a>
+									<p>Perfect Plate was created using tkinter, one of Python's GuiProgramming toolkits.
+										Using the U.S. Department of Agriculture's FoodData Central API, get instant nutrition info for any food items.
+										Create your favorite plates!</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Preview</a></li>
+										<li><a href="https://github.com/gregorybutton/PerfectPlate" class="button">Source Code</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
 										<span class="date">Project 2</span>
-										<h2><a href="#">Performance Tracker</a></h2>
+										<h2><a>Performance Tracker</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+									<a class="image fit"><img src="images/pic03.jpg" alt="" /></a>
 									<p>This projects really shows how well I can develop things in Java.</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Preview</a></li>
+										<li class="button">Preview</li>
 									</ul>
 								</article>
 							</section>
 					</div>
+
+					<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+						<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+						<div class="w3-modal-content w3-animate-zoom">
+						  <img src="images/PerfectPlate.gif" style="width:100%">
+						</div>
+					  </div>
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -121,6 +136,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
 
 	</body>
 </html>
